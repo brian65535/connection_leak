@@ -1,5 +1,12 @@
 # connection_leak
-Unit test to reproduct connection leaks in Vert.x HttpClient
+Unit test to reproduct connection leaks in HttpClient in Vert.x 3.5.0 and Netty 4.1.15 
+
+# Update
+ - Issue reported on Nov 16, 2017: https://github.com/eclipse/vert.x/issues/2212
+ - Fix in Netty created on Nov 17, 2017: https://github.com/netty/netty/pull/7415, cherry-picked into release 4.0.54 and 4.1.18
+ - Fix in Vert.x merged on Dec 6, 2017: https://github.com/eclipse/vert.x/pull/2209, target release 3.5.1
+
+# Unit Test
 
 ```
 $ mvn clean test
